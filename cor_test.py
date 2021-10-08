@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import argparse, re
+import argparse
 import pandas as pd
 from scipy.stats import spearmanr
 import numpy as np
@@ -12,8 +12,8 @@ parser.add_argument('--out', dest='out', default='', type=str, help='output file
 
 ##main
 args = parser.parse_args()
-input =args.input
-out =args.out
+input = args.input
+out = args.out
 
 if not out:
     out = input + ".cor_test.txt"
